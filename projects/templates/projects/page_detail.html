@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{#% load markup %#}
+
+{% block title %}{{ project.title }} / {{ page_title }}{% endblock %}
+
+{% block content %}
+    {#{ page|markdown:"safe,codehilite" }#}
+    {{ page }}
+{% endblock %}
+
+{% block sidebar %}
+    {#{ side|markdown:"safe,codehilite" }#}
+    {{ side }}
+{% endblock %}
