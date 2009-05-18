@@ -1,0 +1,12 @@
+.. _contents:
+
+======================================
+django-projects documentation contents
+======================================
+
+.. toctree::
+    :maxdepth: 2
+    
+    index
+    install
+    download

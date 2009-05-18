@@ -35,3 +35,6 @@ Inside the admin panel of a Django project you will be able to add "Projects", a
 When a project page is opened, it will look for the associated page file in your git project. For example, when you visit ``/projects/django-projects/overview/`` you will see this file, docs/overview.txt because inside my project in the database. I have set the public folder is 'docs' and the extension is set to '.txt'. When a page is looked up, it will also look for the page ``sidebar``. Once the view has found all of this, it will pass the project, page, side (sidebar) and page_title to the template: ``projects/page_detail.html``.
 
 When the url ``/projects/update/<project>/`` is visited, the git project will be updated. This can be useful when using github, a webhook could be set up so that your site always updates to any new commits.
+
+### Where are projects stored locally?
+Every project will be stored at: ``PROJECT_ROOT/<slug>``, so in your settings it is important to set ``PROJECT_ROOT = '/home/kylef/git/``.
