@@ -11,7 +11,7 @@ setup(
     url='http://kylefuller.co.uk/projects/django-projects/',
     download_url='http://cloud.github.com/downloads/kylef/django-projects/django-projects-%s.zip' % projects.__version__,
     packages=['projects'],
-    package_data={'projects': ['templates/base.html', 'templates/projects/*.html']},
+    package_data={'projects': ['templates/base.html', 'templates/projects/*.html', 'templates/docs/*.html']},
     requires='unipath',
     license='BSD',
     classifiers=[
