@@ -12,6 +12,7 @@ setup(
     download_url='http://cloud.github.com/downloads/kylef/django-projects/django-projects-%s.zip' % projects.__version__,
     packages=['projects'],
     package_data={'projects': ['templates/base.html', 'templates/projects/*.html']},
+    requires='unipath',
     license='BSD',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
